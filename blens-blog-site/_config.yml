@@ -1,0 +1,34 @@
+title: Blen's Blog
+email: your.email@example.com
+description: >-
+  Bridging the STEM opportunity gap for immigrants and children of immigrants.
+baseurl: "" 
+url: "https://blen12.github.io"
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+sass:
+  style: compressed
+
+include: ["_pages"]
+collections:
+  pages:
+    output: true
